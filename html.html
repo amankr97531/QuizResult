@@ -1,0 +1,128 @@
+<html>
+<title>Html quiz result</title>
+<head>
+    <style>
+	#header {
+	
+	width:relative;
+	height:relative;
+	background-color:#00cec9;
+	box-shadow:0px 2px 5px 1px rgba(0.5, 0.5, 0.5, 0.5);
+	z-index:2;
+	
+	
+}
+
+#TABLE {
+	
+	width:relative;
+	height:relative;
+	background-color:#81ecec;
+	box-shadow:0px 2px 5px 1px rgba(0.5, 0.5, 0.5, 0.5);
+	z-index:2;
+	
+	
+}
+
+</style>
+
+
+
+<script>
+	      window.oncontextmenu=function ()
+		  {
+		  console.log("Right click Disabled");
+		  return false;
+		  }
+	</script>
+						    <script>
+    /*function check(e)
+    {
+    alert(e.keyCode);
+    }*/
+    document.onkeydown = function(e) {
+            if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {//Alt+c, Alt+v will also be disabled sadly.
+                alert('not allowed');
+            }
+            return false;
+    };
+    </script>
+
+</head>
+<body bgcolor="#81ecec">
+    <div id="header">
+	<center><b></br><h3>
+	     HTML QUIZ CONTESTANTS NAME AND SCORE<b></center><br></h3>
+	
+	</div>
+	</br>
+	</br><center>
+	
+	
+	 <STYLE>
+    TABLE, TH , TD {
+	   BORDER: 2PX SOLID RED;
+	   BORDER-COLLAPSE: COLLAPSE;
+	   }
+	   
+	   TH, TD {
+	   PADDING:10PX;
+	   }
+	   
+	   </STYLE>
+	   
+	   
+	   <DIV ID="TABLE">
+	<table width="90%">
+	<thead style="background-color: RED;font-size: 15px; ">
+      <tr>
+        <th><H3> NO.</th>
+		  <th ><H3>NAME</th>
+        <th ><H3>SCORE</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><center>1</td>
+        <td><B>PUNYA KUMARI</B></td>
+		<td><center>20/20</td>
+      </tr>
+	  
+	   <tr>
+        <td><center>2</td>
+        <td><B>NAMRATA KUMARI</B></td>
+		<td><center>19/20</td>
+      </tr>
+	  
+	   <tr>
+        <td><center>3</td>
+        <td><B>SANJANA KUMARI</B></td>
+		<td><center>17/20</td>
+      </tr>
+     
+	 
+	  <tr>
+        <td><center>4</td>
+        <td><B>PARSANSHA KUMARI</B></td>
+		<td><center>16/20</td>
+      </tr>
+	  </br>
+	   <tr>
+        <td><center>5</td>
+        <td><B>ASHISH RAJPUT</B></td>
+		<td><center>14/20</td>
+      </tr>
+	  
+	   <tr>
+        <td><center>6</td>
+        <td><B>SHIVANI KUMARI</B></td>
+		<td><center>06/20</td>
+      </tr>
+    </tbody>
+  </table>
+  </BR>
+  </DIV>
+  
+  </BODY>
+  </HTML>
